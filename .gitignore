@@ -1,2 +1,42 @@
 credentials.txt
 *.swp
+
+# Local Terraform working directories (providers, modules, backend settings).
+**/.terraform/*
+
+# State and state backups can contain secrets.
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Local variable values; sanitized *.tfvars.example files remain trackable.
+*.tfvars
+*.tfvars.json
+
+# Saved plans and crash logs can contain private information.
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+
+# Local overrides change configuration for one machine.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Local Terraform CLI settings can contain credentials.
+.terraformrc
+terraform.rc
+
+# Local environment files and AWS credentials.
+.env
+.env.*
+!.env.example
+.aws/
+
+# Private key files.
+*.pem
+*.key
+
+# Keep .terraform.lock.hcl in Git for repeatable provider selections.
